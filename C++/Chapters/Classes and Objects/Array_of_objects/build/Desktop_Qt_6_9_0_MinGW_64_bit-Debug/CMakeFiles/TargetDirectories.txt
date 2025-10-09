@@ -1,0 +1,7 @@
+D:/C++/Chapters/Classes and Objects/Array_of_objects/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/CMakeFiles/Array_of_objects.dir
+D:/C++/Chapters/Classes and Objects/Array_of_objects/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+D:/C++/Chapters/Classes and Objects/Array_of_objects/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+D:/C++/Chapters/Classes and Objects/Array_of_objects/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
+D:/C++/Chapters/Classes and Objects/Array_of_objects/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/CMakeFiles/install.dir
+D:/C++/Chapters/Classes and Objects/Array_of_objects/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
+D:/C++/Chapters/Classes and Objects/Array_of_objects/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir

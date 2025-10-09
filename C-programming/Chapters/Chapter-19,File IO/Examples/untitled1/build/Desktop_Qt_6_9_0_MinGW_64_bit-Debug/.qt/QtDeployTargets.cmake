@@ -1,0 +1,3 @@
+set(__QT_DEPLOY_TARGET_appuntitled1_FILE D:/C-programming/Chapters/Chapter-19,File IO/Examples/untitled1/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/appuntitled1.exe)
+set(__QT_DEPLOY_TARGET_appuntitled1_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_appuntitled1_RUNTIME_DLLS C:/qt/6.9.0/mingw_64/bin/Qt6Quick.dll;C:/qt/6.9.0/mingw_64/bin/Qt6QmlMeta.dll;C:/qt/6.9.0/mingw_64/bin/Qt6QmlWorkerScript.dll;C:/qt/6.9.0/mingw_64/bin/Qt6QmlModels.dll;C:/qt/6.9.0/mingw_64/bin/Qt6Qml.dll;C:/qt/6.9.0/mingw_64/bin/Qt6Network.dll;C:/qt/6.9.0/mingw_64/bin/Qt6OpenGL.dll;C:/qt/6.9.0/mingw_64/bin/Qt6Gui.dll;C:/qt/6.9.0/mingw_64/bin/Qt6Core.dll)

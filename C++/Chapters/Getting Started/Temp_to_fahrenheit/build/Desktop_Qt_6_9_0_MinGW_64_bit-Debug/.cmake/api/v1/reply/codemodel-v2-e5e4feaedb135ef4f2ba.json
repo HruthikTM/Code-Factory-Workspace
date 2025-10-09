@@ -1,0 +1,61 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-bbefeec05b8294bda744.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Temp_to_fahrenheit",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Temp_to_fahrenheit::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Temp_to_fahrenheit-Debug-6826333e5eca1cce00fb.json",
+					"name" : "Temp_to_fahrenheit",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/C++/Chapters/Getting Started/Temp_to_fahrenheit/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug",
+		"source" : "D:/C++/Chapters/Getting Started/Temp_to_fahrenheit"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

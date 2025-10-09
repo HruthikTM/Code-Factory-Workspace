@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/Bug_window/">
+    <file alias="main.qml">D:/C-programming/Chapters/Chapter-19,File IO/Examples/Bug_window/main.qml</file>
+  </qresource>
+</RCC>
+

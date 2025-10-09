@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/Bug_window">
+    <file alias="qmldir">D:/C-programming/Chapters/Chapter-19,File IO/Examples/Bug_window/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/Bug_window/qmldir</file>
+  </qresource>
+</RCC>
+

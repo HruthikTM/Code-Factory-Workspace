@@ -1,0 +1,4 @@
+module varshini
+typeinfo appvarshini.qmltypes
+prefer :/varshini/
+

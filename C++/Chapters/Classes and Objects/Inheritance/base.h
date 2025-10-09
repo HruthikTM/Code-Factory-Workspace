@@ -1,0 +1,12 @@
+#ifndef BASE_H
+#define BASE_H
+#include <iostream>
+using namespace std;
+class Base
+{
+public:
+    Base();
+    void fun();
+};
+
+#endif // BASE_H

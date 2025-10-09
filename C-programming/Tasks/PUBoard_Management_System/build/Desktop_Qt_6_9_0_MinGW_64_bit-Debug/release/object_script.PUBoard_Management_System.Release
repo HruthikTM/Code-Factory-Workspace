@@ -1,0 +1,15 @@
+release/College.o
+release/Evaluator.o
+release/Marks.o
+release/Menu.o
+release/PUBoard.o
+release/Student.o
+release/Student_details.o
+release/boardDB.o
+release/collegeDB.o
+release/evaluatorDB.o
+release/main.o
+release/marksDB.o
+release/sqlite3.o
+release/studentDB.o
+release/subjectData.o

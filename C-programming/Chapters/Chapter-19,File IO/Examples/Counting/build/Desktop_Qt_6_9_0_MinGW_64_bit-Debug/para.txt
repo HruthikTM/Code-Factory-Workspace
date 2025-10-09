@@ -1,0 +1,4 @@
+In traditional programming languages like C, C++ when programs were compiled, they used to be 
+converted into the code understood by the particular underlying hardware, so If we try to run the 
+same code at another machine with different hardware, which understands different code will 
+cause an error, so you have to re-compile the code to be understood by the new hardware.

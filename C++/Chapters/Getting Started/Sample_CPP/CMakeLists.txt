@@ -1,0 +1,14 @@
+cmake_minimum_required(VERSION 3.16)
+
+project(Sample_CPP LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+add_executable(Sample_CPP main.cpp)
+
+include(GNUInstallDirs)
+install(TARGETS Sample_CPP
+    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+)

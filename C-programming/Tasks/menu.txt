@@ -1,0 +1,780 @@
+#ifndef PUMANAGEMENT_C
+#define PUMANAGEMENT_C
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "PUBoard.h"
+
+// void addBoardDetails();
+// void boardLogin();
+//void addCollegeDetails();
+//void collegeLogin();
+// void addStudentDetails();
+//void* enterStudentPersonalDetails();
+//void* enterStudentAcademicDetails();
+//void displayCollegeDetails();
+// void displayStudentDetails();
+//void displayStudentPersonalDetails(StudentPersonalDetails *spd);
+//void displayStudentAcademicDetails(StudentAcademicDetails *sad);
+// void studentLogin();
+// void enterStudentMarks();
+// void displayCollegeWisePassPercentage();
+// void getIndividualStudentResult();
+void puManagementMenu();
+
+
+PUBoard board;
+
+// void addBoardDetails() {
+//     if (boardCount >= MAX_BOARDS) {
+//         printf("Maximum number of boards reached.\n");
+//         return;
+//     }
+
+//     printf("\n--- Add Board Details ---\n");
+//     printf("Enter Board Name: ");
+//     scanf("%s", boards[boardCount].boardName);
+//     printf("Set User ID: ");
+//     scanf("%s", boards[boardCount].userId);
+//     printf("Set Password: ");
+//     scanf("%s", boards[boardCount].password);
+
+//     boardCount++;
+//     printf("Board details added successfully.\n");
+// }
+
+// void boardLogin() {
+//     char enteredUserId[20];
+//     char enteredPassword[20];
+
+//     printf("\n--- Board Login ---\n");
+//     printf("Enter User ID: ");
+//     scanf("%s", enteredUserId);
+//     printf("Enter Password: ");
+//     scanf("%s", enteredPassword);
+
+//     int found = 0;
+
+//     for (int i = 0; i < boardCount; i++) {
+//         if (strcmp(enteredUserId, boards[i].userId) == 0 && strcmp(enteredPassword, boards[i].password) == 0) {
+//             printf("\nLogin successful for Board: %s\n", boards[i].boardName);
+//             found = 1;
+
+//             int choice;
+//             do {
+//                 printf("\n--- Board Menu ---\n");
+//                 printf("1. Add College Details\n");
+//                 printf("2. Display College Details\n");
+//                 printf("3. Display College-wise Pass Percentage\n");
+//                 printf("4. Logout\n");
+//                 printf("Enter your choice: ");
+//                 scanf("%d", &choice);
+
+//                 switch (choice) {
+//                 case 1:
+//                     addCollegeDetails();
+//                     printf("College Details Added Successfully\n");
+//                     break;
+//                 case 2:
+//                     displayCollegeDetails();
+//                     break;
+//                 case 3:
+//                     displayCollegeWisePassPercentage();
+//                     break;
+//                 case 4:
+//                     printf("Logging out...\n");
+//                     break;
+//                 default:
+//                     printf("Invalid choice. Please try again.\n");
+//                 }
+//             }
+//             while (choice != 3);
+
+//             break;
+//         }
+//     }
+
+//     if (!found) {
+//         printf("Invalid User ID or Password.\n");
+//     }
+// }
+
+// void addCollegeDetails() {
+
+
+//     College *newCollege = (College *)malloc(sizeof(College));
+//     if (!newCollege) {
+//         printf("Memory allocation failed!\n");
+//         return;
+//     }
+
+//     printf("Enter College Code:\n");
+//     scanf("%s", newCollege->collegeCode);
+
+//     printf("Enter College Name:\n");
+//     scanf("%s", newCollege->collegeName);
+
+//     newCollege->studentCount  = 0;
+//     newCollege->studentList   = NULL;
+//     newCollege->nextCollege   = NULL;
+
+
+//     if (!board.collegeList)
+//         board.collegeList = newCollege;
+//     else {
+//         College *temp = board.collegeList;
+//         while (temp->nextCollege)
+//             temp = temp->nextCollege;
+//         temp->nextCollege = newCollege;
+//     }
+// }
+
+// void displayCollegeDetails() {
+//     College *temp = board.collegeList;
+//     if (!temp) {
+//         printf("\nNo Colleges Available.\n");
+//         return;
+//     }
+
+//     printf("\n--- College List ---\n");
+//     while (temp) {
+//         printf("College Code : %s\n", temp->collegeCode);
+//         printf("College Name : %s\n", temp->collegeName);
+//         printf("Total Students: %d\n", temp->studentCount);
+//         printf("-------------------------\n");
+//         temp = temp->nextCollege;
+//     }
+// }
+
+
+// void collegeLogin()
+// {
+//     char enteredCollegeCode[10];
+//     printf("\n--- College Login ---\n");
+//     printf("Enter College Code: ");
+//     scanf("%9s", enteredCollegeCode);
+
+//     int found = 0;
+//     College *current = board.collegeList;
+
+//     while (current != NULL) {
+//         if (strcmp(enteredCollegeCode, current->collegeCode) == 0) {
+//             printf("\nLogin successful for College: %s\n", current->collegeName);
+//             found = 1;
+
+//             int choice;
+//             do {
+//                 printf("\n--- College Menu ---\n");
+//                 printf("1. Add Student Details\n");
+//                 printf("2. Display Student Details\n");
+//                 printf("3. Logout\n");
+//                 printf("Enter your choice: ");
+//                 scanf("%d", &choice);
+
+//                 switch (choice) {
+//                 case 1:
+//                     addStudentDetails();
+//                     printf("Student Details Added Successfully\n");
+//                     break;
+//                 case 2:
+//                     displayStudentDetails();
+//                     break;
+//                 case 3:
+//                     printf("Logging out...\n");
+//                     break;
+//                 default:
+//                     printf("Invalid choice. Please try again.\n");
+//                 }
+//             } while (choice != 3);
+
+//             break;
+//         }
+//         current = current->nextCollege;
+//     }
+
+//     if (!found) {
+//         printf("Invalid College Code.\n");
+//     }
+// }
+
+
+// void addStudentDetails() {
+//     if (!board.collegeList) {
+//         printf("Please enter college details first.\n");
+//         return;
+//     }
+
+//     char collegeCode[10];
+//     printf("Enter the College Code to add the student to:\n");
+//     scanf("%s", collegeCode);
+
+//     College *targetCollege = board.collegeList;
+//     while (targetCollege && strcmp(targetCollege->collegeCode, collegeCode) != 0)
+//         targetCollege = targetCollege->nextCollege;
+
+//     if (!targetCollege) {
+//         printf("College with code %s not found.\n", collegeCode);
+//         return;
+//     }
+
+//     Student *newStudent = (Student *)malloc(sizeof(Student));
+//     if (!newStudent) {
+//         printf("Memory allocation failed for Student\n");
+//         return;
+//     }
+
+//     printf("Enter Student ID:\n");
+//     scanf("%s", newStudent->studentId);
+
+//     newStudent->spd = (StudentPersonalDetails *)enterStudentPersonalDetails();
+//     newStudent->sad = (StudentAcademicDetails *)enterStudentAcademicDetails();
+//     newStudent->nextStudent = NULL;
+
+
+//     if (!targetCollege->studentList)
+//         targetCollege->studentList = newStudent;
+//     else {
+//         Student *temp = targetCollege->studentList;
+//         while (temp->nextStudent) temp = temp->nextStudent;
+//         temp->nextStudent = newStudent;
+//     }
+
+//     targetCollege->studentCount++;
+//     printf("Student added successfully to %s (%s).\n", targetCollege->collegeName, targetCollege->collegeCode);
+// }
+
+
+// void* enterStudentPersonalDetails() {
+//     printf("\n--- Student Personal Details ---\n");
+
+//     StudentPersonalDetails *spd = (StudentPersonalDetails *)malloc(sizeof(StudentPersonalDetails));
+//     if (!spd) {
+//         printf("Memory allocation failed for StudentPersonalDetails\n");
+//         return NULL;
+//     }
+
+//     spd->dob = (DateOfBirth *)malloc(sizeof(DateOfBirth));
+//     if (!spd->dob) {
+//         printf("Memory allocation failed for DateOfBirth\n");
+//         free(spd);
+//         return NULL;
+//     }
+
+//     printf("Enter Student Name:\n");
+//     scanf("%s", spd->studentName);
+
+//     printf("Enter Father's Name:\n");
+//     scanf("%s", spd->studentFatherName);
+
+//     printf("Enter Mother's Name:\n");
+//     scanf("%s", spd->studentMotherName);
+
+//     printf("Enter Contact Number:\n");
+//     scanf("%s", spd->studentContactNumber);
+
+//     printf("Enter Address:\n");
+//     scanf("%s", spd->studentAddress);
+
+//     printf("Enter Date of Birth (DD Month YYYY):\n");
+//     scanf("%d %s %d", &spd->dob->date, spd->dob->month, &spd->dob->year);
+
+//     return spd;
+// }
+
+
+// void* enterStudentAcademicDetails() {
+//     printf("\n--- Student Academic Details ---\n");
+
+//     StudentAcademicDetails *sad = (StudentAcademicDetails *)malloc(sizeof(StudentAcademicDetails));
+//     if (!sad) {
+//         printf("Memory allocation failed\n");
+//         return NULL;
+//     }
+
+//     const char *streamNames[] = {"Science", "Commerce", "Arts"};
+
+//     const char *scienceSubjects[] = {"Physics", "Chemistry", "Mathematics", "Biology"};
+//     const char *scienceCodes[] = {"PHY", "CHE", "MAT", "BIO"};
+
+//     const char *commerceSubjects[] = {"Accountancy", "BusinessStudies", "Economics", "Commerce"};
+//     const char *commerceCodes[] = {"ACC", "BST", "ECO", "COM"};
+
+//     const char *artsSubjects[] = {"History", "PoliticalScience", "Sociology", "Psychology"};
+//     const char *artsCodes[] = {"HIS", "POL", "SOC", "PSY"};
+
+//     printf("Select Stream:\n1. Science\n2. Commerce\n3. Arts\n");
+//     int streamChoice;
+//     printf("Enter your Choice: ");
+//     scanf("%d", &streamChoice);
+
+//     Stream *selectedStream = (Stream *)malloc(sizeof(Stream));
+//     if (!selectedStream) {
+//         printf("Memory allocation failed\n");
+//         free(sad);
+//         return NULL;
+//     }
+//     strcpy(selectedStream->streamName, streamNames[streamChoice - 1]);
+
+//     for (int i = 0; i < SUBJECT_COUNT; ++i) {
+//         selectedStream->subjects[i] = (Subject *)malloc(sizeof(Subject));
+//         if (!selectedStream->subjects[i]) {
+//             for (int j = 0; j < i; ++j)
+//                 free(selectedStream->subjects[j]);
+//                 free(selectedStream);
+//                 free(sad);
+//                 return NULL;
+//         }
+
+//         switch (streamChoice) {
+//         case 1:
+//             strcpy(selectedStream->subjects[i]->subjectName, scienceSubjects[i]);
+//             strcpy(selectedStream->subjects[i]->subjectCode, scienceCodes[i]);
+//             break;
+//         case 2:
+//             strcpy(selectedStream->subjects[i]->subjectName, commerceSubjects[i]);
+//             strcpy(selectedStream->subjects[i]->subjectCode, commerceCodes[i]);
+//             break;
+//         case 3:
+//             strcpy(selectedStream->subjects[i]->subjectName, artsSubjects[i]);
+//             strcpy(selectedStream->subjects[i]->subjectCode, artsCodes[i]);
+//             break;
+//         default:
+//             strcpy(selectedStream->subjects[i]->subjectName, "Unknown");
+//             strcpy(selectedStream->subjects[i]->subjectCode, "UNK");
+//         }
+
+//         sad->marksDetails[i] = (MarksDetails *)malloc(sizeof(MarksDetails));
+//         sad->marksDetails[i]->sub = selectedStream->subjects[i];
+//         sad->marksDetails[i]->m = (Marks *)malloc(sizeof(Marks));
+//         sad->marksDetails[i]->m->totalMarks = 0;
+//         sad->marksDetails[i]->m->obtainedMarks = 0;
+//         sad->marksDetails[i]->maxScore = 0;
+//         sad->marksDetails[i]->obtainedScore = 0;
+//         sad->marksDetails[i]->percentage = 0.0f;
+//         sad->marksDetails[i]->grade = '-';
+//     }
+
+//     for (int i = 0; i < 3; ++i) sad->stream[i] = NULL;
+//     sad->stream[0] = selectedStream;
+
+//     printf("\nSubjects in %s Stream:\n", selectedStream->streamName);
+//     for (int i = 0; i < SUBJECT_COUNT; ++i)
+//         printf("  • %s (%s)\n", selectedStream->subjects[i]->subjectName, selectedStream->subjects[i]->subjectCode);
+
+//     return sad;
+// }
+
+// void displayStudentDetails() {
+//     College *college = board.collegeList;
+//     if (!college) {
+//         printf("No college found.\n");
+//         return;
+//     }
+
+//     while (college) {
+//         Student *student = college->studentList;
+//         if (!student)
+//             printf("No students found for the college: %s\n", college->collegeName);
+//         else {
+//             printf("\n--- Student List for College %s ---\n", college->collegeName);
+//             while (student) {
+//                 printf("Student ID: %s\n", student->studentId);
+//                 displayStudentPersonalDetails(student->spd);
+//                 displayStudentAcademicDetails(student->sad);
+//                 printf("-------------------------\n");
+//                 student = student->nextStudent;
+//             }
+//         }
+//         college = college->nextCollege;
+//     }
+// }
+
+// void displayStudentPersonalDetails(StudentPersonalDetails *spd) {
+//     if (!spd || !spd->dob) {
+//         printf("No personal details available.\n");
+//         return;
+//     }
+
+//     printf("\n--- Personal Details ---\n");
+//     printf("Name          : %s\n", spd->studentName);
+//     printf("Father's Name : %s\n", spd->studentFatherName);
+//     printf("Mother's Name : %s\n", spd->studentMotherName);
+//     printf("Contact Number: %s\n", spd->studentContactNumber);
+//     printf("Address       : %s\n", spd->studentAddress);
+//     printf("DOB           : %d %s %d\n", spd->dob->date, spd->dob->month, spd->dob->year);
+// }
+
+// void displayStudentAcademicDetails(StudentAcademicDetails *sad) {
+//     if (!sad || !sad->stream[0]) {
+//         printf("No academic details available.\n");
+//         return;
+//     }
+
+//     printf("\n--- Academic Details ---\n");
+//     printf("Stream: %s\n", sad->stream[0]->streamName);
+
+//     int totalMaxMarks = 0;
+//     int totalObtainedMarks = 0;
+//     int isFail = 0;
+
+//     for (int i = 0; i < SUBJECT_COUNT; ++i) {
+//         if (!sad->marksDetails[i])
+//             continue;
+
+//         totalMaxMarks += sad->marksDetails[i]->m->totalMarks;
+//         totalObtainedMarks += sad->marksDetails[i]->m->obtainedMarks;
+
+//         if (sad->marksDetails[i]->grade == 'F')
+//             isFail = 1;
+
+//         printf("Subject: %s (%s)\n", sad->marksDetails[i]->sub->subjectName, sad->marksDetails[i]->sub->subjectCode);
+//         printf("  Total Marks    : %d\n", sad->marksDetails[i]->m->totalMarks);
+//         printf("  Obtained Marks : %d\n", sad->marksDetails[i]->m->obtainedMarks);
+//         printf("  Percentage     : %.2f%%\n", sad->marksDetails[i]->percentage);
+//         printf("  Grade          : %c\n", sad->marksDetails[i]->grade);
+//         printf("  ---------------------------\n");
+//     }
+
+//     float overallPercentage = (totalMaxMarks == 0) ? 0.0f : ((float)totalObtainedMarks / totalMaxMarks) * 100.0f;
+
+//     printf(">>> Total Marks         : %d\n", totalMaxMarks);
+//     printf(">>> Total Obtained Marks: %d\n", totalObtainedMarks);
+//     printf(">>> Overall Percentage  : %.2f%%\n", overallPercentage);
+//     printf(">>> Final Result        : %s\n", isFail ? "Fail" : "Pass");
+// }
+
+// void studentLogin()
+// {
+//     char enteredStudentID[10];
+//     printf("\n--- Student Login ---\n");
+//     printf("Enter Student ID: ");
+//     scanf("%9s", enteredStudentID);
+
+//     int found = 0;
+//     Student *current = board.collegeList->studentList;
+
+//     while (current != NULL) {
+//         if (strcmp(enteredStudentID, current->studentId) == 0) {
+//             printf("\nLogin successful for Name: %s\n", current->spd->studentName);
+//             found = 1;
+
+//             int choice;
+//             do {
+//                 printf("\n--- Student Menu ---\n");
+//                 printf("1. Get Result\n");
+//                 printf("2. Logout\n");
+//                 printf("Enter your choice: ");
+//                 scanf("%d", &choice);
+
+//                 switch (choice) {
+//                 case 1:
+//                     getIndividualStudentResult();
+//                     printf("Student Details Added Successfully\n");
+//                     break;
+//                 case 2:
+//                     printf("Logging out...\n");
+//                     break;
+//                 default:
+//                     printf("Invalid choice. Please try again.\n");
+//                 }
+//             } while (choice != 2);
+
+//             break;
+//         }
+//         current = current->nextStudent;
+//     }
+
+//     if (!found) {
+//         printf("Invalid College ID.\n");
+//     }
+// }
+
+// void evaluatorLogin() {
+//     char enteredUserId[20];
+//     char enteredPassword[20];
+
+//     printf("\n--- Evaluator Login ---\n");
+//     printf("Enter User ID: ");
+//     scanf("%s", enteredUserId);
+//     printf("Enter Password: ");
+//     scanf("%s", enteredPassword);
+
+//     int found = 0;
+
+//     for (int i = 0; i < evaluatorCount; i++) {
+//         if (strcmp(enteredUserId, evaluators[i].userId) == 0 && strcmp(enteredPassword, evaluators[i].password) == 0) {
+//             printf("\nLogin successful for Evaluator\n");
+//             found = 1;
+
+//             int choice;
+//             do {
+//                 printf("\n--- Evaluator Menu ---\n");
+//                 printf("1. Enter Student Marks\n");
+//                 printf("2. Logout\n");
+//                 printf("Enter your choice: ");
+//                 scanf("%d", &choice);
+
+//                 switch (choice) {
+//                 case 1:
+//                     enterStudentMarks();
+//                     break;
+//                 case 2:
+//                     printf("Logging out...\n");
+//                     break;
+//                 default:
+//                     printf("Invalid choice. Please try again.\n");
+//                 }
+//             }
+//             while (choice != 2);
+
+//             break;
+//         }
+//     }
+
+//     if (!found) {
+//         printf("Invalid User ID or Password.\n");
+//     }
+// }
+
+// void enterStudentMarks() {
+//     if (!board.collegeList) {
+//         printf("No colleges available.\n");
+//         return;
+//     }
+
+//     char studentId[20], subjectCode[10];
+//     int totalMarks, obtainedMarks;
+
+//     printf("Enter student ID: ");
+//     scanf("%s", studentId);
+//     printf("Enter subject code: ");
+//     scanf("%s", subjectCode);
+
+//     College *college = board.collegeList;
+//     Student *foundStudent = NULL;
+//     while (college) {
+//         Student *student = college->studentList;
+//         while (student) {
+//             if (strcmp(student->studentId, studentId) == 0) {
+//                 foundStudent = student;
+//                 break;
+//             }
+//             student = student->nextStudent;
+//         }
+//         if (foundStudent)
+//             break;
+//         college = college->nextCollege;
+//     }
+
+//     if (!foundStudent) {
+//         printf("Student with ID %s not found.\n", studentId);
+//         return;
+//     }
+
+//     StudentAcademicDetails *sad = foundStudent->sad;
+//     if (!sad || !sad->stream[0]) {
+//         printf("Academic details not found.\n");
+//         return;
+//     }
+
+//     int i;
+//     for (i = 0; i < SUBJECT_COUNT; ++i) {
+//         if (strcmp(sad->marksDetails[i]->sub->subjectCode, subjectCode) == 0)
+//             break;
+//     }
+
+//     if (i == SUBJECT_COUNT) {
+//         printf("Subject code %s not found.\n", subjectCode);
+//         return;
+//     }
+
+//     printf("Enter total marks for %s: ", sad->marksDetails[i]->sub->subjectName); scanf("%d", &totalMarks);
+//     printf("Enter obtained marks: "); scanf("%d", &obtainedMarks);
+
+//     sad->marksDetails[i]->m->totalMarks = totalMarks;
+//     sad->marksDetails[i]->m->obtainedMarks = obtainedMarks;
+//     sad->marksDetails[i]->maxScore = totalMarks;
+//     sad->marksDetails[i]->obtainedScore = obtainedMarks;
+//     sad->marksDetails[i]->percentage = (totalMarks != 0) ? ((float)obtainedMarks / totalMarks) * 100.0f : 0.0f;
+
+//     float p = sad->marksDetails[i]->percentage;
+//     sad->marksDetails[i]->grade = (p >= 90) ? 'A' : (p >= 75) ? 'B' : (p >= 60) ? 'C' : (p >= 40) ? 'D' : 'F';
+
+//     printf("Marks updated successfully for student %s in subject %s.\n", studentId, sad->marksDetails[i]->sub->subjectName);
+// }
+
+// void displayCollegeWisePassPercentage() {
+//     if (!board.collegeList) {
+//         printf("No colleges available.\n");
+//         return;
+//     }
+
+//     College *college = board.collegeList;
+//     printf("\n--- College-wise Pass Percentage ---\n");
+
+//     while (college) {
+//         int totalStudents = 0;
+//         int passedStudents = 0;
+
+//         Student *student = college->studentList;
+//         while (student) {
+//             totalStudents++;
+//             int isFail = 0;
+
+//             StudentAcademicDetails *sad = student->sad;
+//             if (sad && sad->stream[0]) {
+//                 for (int i = 0; i < SUBJECT_COUNT; i++) {
+//                     if (sad->marksDetails[i] && sad->marksDetails[i]->grade == 'F') {
+//                         isFail = 1;
+//                         break;
+//                     }
+//                 }
+
+//                 if (!isFail)
+//                     passedStudents++;
+//             }
+
+//             student = student->nextStudent;
+//         }
+
+//         float passPercentage = (totalStudents > 0) ? ((float)passedStudents / totalStudents) * 100.0f : 0.0f;
+
+//         printf("College: %s (%s)\n", college->collegeName, college->collegeCode);
+//         printf("  Total Students   : %d\n", totalStudents);
+//         printf("  Passed Students  : %d\n", passedStudents);
+//         printf("  Pass Percentage  : %.2f%%\n", passPercentage);
+//         printf("----------------------------------------\n");
+
+//         college = college->nextCollege;
+//     }
+// }
+
+// void getIndividualStudentResult() {
+//     if (!board.collegeList) {
+//         printf("No colleges available.\n");
+//         return;
+//     }
+
+//     char studentId[20];
+//     int day, year;
+//     char month[15];
+
+//     printf("\n--- Student Result Portal ---\n");
+//     printf("Enter Student ID: ");
+//     scanf("%s", studentId);
+//     printf("Enter Date of Birth (DD Month YYYY): ");
+//     scanf("%d %s %d", &day, month, &year);
+
+//     College *college = board.collegeList;
+//     Student *foundStudent = NULL;
+
+//     while (college) {
+//         Student *student = college->studentList;
+//         while (student) {
+//             if (strcmp(student->studentId, studentId) == 0 && student->spd && student->spd->dob && student->spd->dob->date == day && strcmp(student->spd->dob->month, month) == 0 && student->spd->dob->year == year) {
+//                 foundStudent = student;
+//                 break;
+//             }
+//             student = student->nextStudent;
+//         }
+//         if (foundStudent)
+//             break;
+//         college = college->nextCollege;
+//     }
+
+//     if (!foundStudent) {
+//         printf("Invalid Student ID or Date of Birth.\n");
+//         return;
+//     }
+
+//     StudentAcademicDetails *sad = foundStudent->sad;
+//     if (!sad || !sad->stream[0]) {
+//         printf("Academic details not found.\n");
+//         return;
+//     }
+
+//     printf("\n----- Student Result -----\n");
+//     printf("Student ID     : %s\n", foundStudent->studentId);
+//     printf("Student Name   : %s\n", foundStudent->spd->studentName);
+//     printf("Father's Name  : %s\n", foundStudent->spd->studentFatherName);
+//     printf("Date of Birth  : %d %s %d\n", foundStudent->spd->dob->date, foundStudent->spd->dob->month, foundStudent->spd->dob->year);
+//     printf("\n--- Subject-wise Marks ---\n");
+
+//     int totalMarks = 0, obtainedMarks = 0;
+//     float overallPercentage = 0.0;
+//     int isFail = 0;
+
+//     for (int i = 0; i < SUBJECT_COUNT; i++) {
+//         MarksDetails *md = sad->marksDetails[i];
+//         if (!md)
+//             continue;
+
+//         totalMarks += md->m->totalMarks;
+//         obtainedMarks += md->m->obtainedMarks;
+
+//         if (md->grade == 'F')
+//             isFail = 1;
+
+//         printf("Subject: %s (%s)\n", md->sub->subjectName, md->sub->subjectCode);
+//         printf("  Marks: %d/%d\n", md->m->obtainedMarks, md->m->totalMarks);
+//         printf("  Grade: %c\n", md->grade);
+//         printf("---------------------------\n");
+//     }
+
+//     if (totalMarks > 0)
+//         overallPercentage = ((float)obtainedMarks / totalMarks) * 100.0f;
+
+//     char overallGrade = (overallPercentage >= 90) ? 'A' : (overallPercentage >= 75) ? 'B' : (overallPercentage >= 60) ? 'C' : (overallPercentage >= 40) ? 'D' : 'F';
+
+//     printf("\nTotal Marks     : %d\n", totalMarks);
+//     printf("Obtained Marks  : %d\n", obtainedMarks);
+//     printf("Percentage      : %.2f%%\n", overallPercentage);
+//     printf("Overall Grade   : %c\n", isFail ? 'F' : overallGrade);
+//     printf("---------------------------\n");
+// }
+
+void puManagementMenu() {
+    int choice;
+    while (1) {
+        printf("\n----- PU Management Menu -----\n");
+        printf("1. Add Board Details\n");
+        printf("2. Board Login\n");
+        printf("3. College Login\n");
+        printf("4. Student Login\n");
+        printf("5. Evaluator Login\n");
+        printf("6. Exit\n");
+
+        printf("\nEnter your choice: ");
+        scanf("%d", &choice);
+
+        switch (choice){
+        case 1:
+            addBoardDetails();
+            break;
+        case 2:
+            boardLogin();
+            break;
+        case 3:
+            collegeLogin();
+            break;
+        case 4:
+            studentLogin();
+            break;
+        case 5:
+            evaluatorLogin();
+            break;
+        case 6:
+            printf("Exiting the program.\n");
+            exit(0);
+
+        default:
+            printf("INVALID CHOICE!\n");
+
+        }
+
+    }
+}
+
+#endif // PUMANAGEMENT_C

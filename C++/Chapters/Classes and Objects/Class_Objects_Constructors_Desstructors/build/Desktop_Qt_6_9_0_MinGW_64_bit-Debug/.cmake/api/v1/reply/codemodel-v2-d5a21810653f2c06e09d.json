@@ -1,0 +1,61 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-2cc4081823b23e69ffc3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Class_Objects_Constructors_Desstructors",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Class_Objects_Constructors_Desstructors::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Class_Objects_Constructors_Desstructors-Debug-03a99fee244760d016fc.json",
+					"name" : "Class_Objects_Constructors_Desstructors",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/C++/Chapters/Classes and Objects/Class_Objects_Constructors_Desstructors/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug",
+		"source" : "D:/C++/Chapters/Classes and Objects/Class_Objects_Constructors_Desstructors"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

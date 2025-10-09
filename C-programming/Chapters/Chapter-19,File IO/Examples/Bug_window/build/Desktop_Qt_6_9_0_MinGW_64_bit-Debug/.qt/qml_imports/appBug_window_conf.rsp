@@ -1,0 +1,14 @@
+-rootPath
+D:/C-programming/Chapters/Chapter-19,File IO/Examples/Bug_window
+-cmake-output
+-output-file
+D:/C-programming/Chapters/Chapter-19,File IO/Examples/Bug_window/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.qt/qml_imports/appBug_window_conf.cmake
+-importPath
+D:/C-programming/Chapters/Chapter-19,File IO/Examples/Bug_window/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/Bug_window
+-importPath
+D:/C-programming/Chapters/Chapter-19,File IO/Examples/Bug_window/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug
+-importPath
+C:/qt/6.9.0/mingw_64/qml
+-qrcFiles
+D:/C-programming/Chapters/Chapter-19,File IO/Examples/Bug_window/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.qt/rcc/qmake_Bug_window.qrc
+D:/C-programming/Chapters/Chapter-19,File IO/Examples/Bug_window/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/.qt/rcc/appBug_window_raw_qml_0.qrc

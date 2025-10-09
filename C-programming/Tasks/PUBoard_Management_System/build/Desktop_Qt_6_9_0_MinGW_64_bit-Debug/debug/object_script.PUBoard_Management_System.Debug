@@ -1,0 +1,15 @@
+debug/College.o
+debug/Evaluator.o
+debug/Marks.o
+debug/Menu.o
+debug/PUBoard.o
+debug/Student.o
+debug/Student_details.o
+debug/boardDB.o
+debug/collegeDB.o
+debug/evaluatorDB.o
+debug/main.o
+debug/marksDB.o
+debug/sqlite3.o
+debug/studentDB.o
+debug/subjectData.o

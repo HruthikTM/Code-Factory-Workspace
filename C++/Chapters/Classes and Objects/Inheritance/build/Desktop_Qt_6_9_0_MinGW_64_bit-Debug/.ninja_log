@@ -1,0 +1,12 @@
+# ninja log v6
+7	134	7773708468346100	CMakeFiles/Inheritance.dir/derived.cpp.obj	a79421eb1cb4e5c0
+1	379	7773708468274740	CMakeFiles/Inheritance.dir/main.cpp.obj	9c5edebfbea8747d
+31	483	7773708758066825	CMakeFiles/Inheritance.dir/derived.cpp.obj	a79421eb1cb4e5c0
+28	498	7773708758046843	CMakeFiles/Inheritance.dir/base.cpp.obj	223bb1b4c452bfa9
+24	504	7773708757996849	CMakeFiles/Inheritance.dir/main.cpp.obj	9c5edebfbea8747d
+505	642	7773708762806442	Inheritance.exe	c3306ff548a272a5
+30	349	7773709183293542	CMakeFiles/Inheritance.dir/main.cpp.obj	9c5edebfbea8747d
+33	371	7773709183323465	CMakeFiles/Inheritance.dir/derived.cpp.obj	a79421eb1cb4e5c0
+371	518	7773709186705306	Inheritance.exe	c3306ff548a272a5
+26	379	7773709556227806	CMakeFiles/Inheritance.dir/main.cpp.obj	9c5edebfbea8747d
+380	494	7773709559768863	Inheritance.exe	c3306ff548a272a5

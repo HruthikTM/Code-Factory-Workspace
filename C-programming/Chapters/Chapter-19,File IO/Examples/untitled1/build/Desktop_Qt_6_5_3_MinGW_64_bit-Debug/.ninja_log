@@ -1,0 +1,37 @@
+# ninja log v6
+13	69	7756447016434087	untitled1/main.qml	c734c88d0d4b7a00
+13	69	7756447016434087	D:/C-programming/Chapters/Chapter-19,File IO/Examples/untitled1/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/untitled1/main.qml	c734c88d0d4b7a00
+22	186	7756447017681273	.qt_plugins/Qt6_QmlPlugins_Imports_appuntitled1.cmake	4e9894f88bb30bb1
+22	186	7756447017681273	D:/C-programming/Chapters/Chapter-19,File IO/Examples/untitled1/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qt_plugins/Qt6_QmlPlugins_Imports_appuntitled1.cmake	4e9894f88bb30bb1
+186	266	7756447018409420	.rcc/qmlcache/appuntitled1_qmlcache_loader.cpp	b570a869da0bc8f8
+186	266	7756447018409420	D:/C-programming/Chapters/Chapter-19,File IO/Examples/untitled1/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.rcc/qmlcache/appuntitled1_qmlcache_loader.cpp	b570a869da0bc8f8
+266	451	7756447019705569	appuntitled1_autogen/timestamp	f36e3fb3b5b00cd
+266	451	7756447019705569	appuntitled1_autogen/mocs_compilation.cpp	f36e3fb3b5b00cd
+266	451	7756447019705569	D:/C-programming/Chapters/Chapter-19,File IO/Examples/untitled1/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/appuntitled1_autogen/timestamp	f36e3fb3b5b00cd
+266	451	7756447019705569	D:/C-programming/Chapters/Chapter-19,File IO/Examples/untitled1/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/appuntitled1_autogen/mocs_compilation.cpp	f36e3fb3b5b00cd
+460	527	7756447021025008	.rcc/qrc_qmake_untitled1.cpp	8f512704c166d0b3
+460	527	7756447021025008	D:/C-programming/Chapters/Chapter-19,File IO/Examples/untitled1/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.rcc/qrc_qmake_untitled1.cpp	8f512704c166d0b3
+466	532	7756447021025008	.rcc/qrc_appuntitled1_raw_qml_0.cpp	40f3b4f5684434e2
+466	532	7756447021025008	D:/C-programming/Chapters/Chapter-19,File IO/Examples/untitled1/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.rcc/qrc_appuntitled1_raw_qml_0.cpp	40f3b4f5684434e2
+454	611	7756447021949853	meta_types/appuntitled1_json_file_list.txt	156aafd40fd8a78c
+454	611	7756447021949853	meta_types/appuntitled1_json_file_list.txt.timestamp	156aafd40fd8a78c
+454	611	7756447021949853	D:/C-programming/Chapters/Chapter-19,File IO/Examples/untitled1/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/meta_types/appuntitled1_json_file_list.txt	156aafd40fd8a78c
+454	611	7756447021949853	D:/C-programming/Chapters/Chapter-19,File IO/Examples/untitled1/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/meta_types/appuntitled1_json_file_list.txt.timestamp	156aafd40fd8a78c
+611	659	7756447022415559	meta_types/qt6appuntitled1_debug_metatypes.json.gen	cd68d9485217a697
+611	659	7756447022415559	meta_types/qt6appuntitled1_debug_metatypes.json	cd68d9485217a697
+611	659	7756447022415559	D:/C-programming/Chapters/Chapter-19,File IO/Examples/untitled1/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/meta_types/qt6appuntitled1_debug_metatypes.json.gen	cd68d9485217a697
+611	659	7756447022415559	D:/C-programming/Chapters/Chapter-19,File IO/Examples/untitled1/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/meta_types/qt6appuntitled1_debug_metatypes.json	cd68d9485217a697
+659	850	7756447023823750	appuntitled1_qmltyperegistrations.cpp	f92b9e0fb7c12f86
+659	850	7756447023823750	untitled1/appuntitled1.qmltypes	f92b9e0fb7c12f86
+659	850	7756447023823750	D:/C-programming/Chapters/Chapter-19,File IO/Examples/untitled1/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/appuntitled1_qmltyperegistrations.cpp	f92b9e0fb7c12f86
+659	850	7756447023823750	D:/C-programming/Chapters/Chapter-19,File IO/Examples/untitled1/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/untitled1/appuntitled1.qmltypes	f92b9e0fb7c12f86
+850	1005	7756447025797812	.rcc/qmlcache/appuntitled1_main_qml.cpp	8f82f7941c1a64a
+850	1005	7756447025797812	D:/C-programming/Chapters/Chapter-19,File IO/Examples/untitled1/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.rcc/qmlcache/appuntitled1_main_qml.cpp	8f82f7941c1a64a
+1005	1158	7756447025935227	CMakeFiles/appuntitled1.dir/appuntitled1_autogen/mocs_compilation.cpp.obj	e6ae06088b83879a
+1015	1176	7756447026038310	CMakeFiles/appuntitled1.dir/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.rcc/qrc_qmake_untitled1.cpp.obj	6876d100a5661051
+1025	1179	7756447026138593	CMakeFiles/appuntitled1.dir/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.rcc/qrc_appuntitled1_raw_qml_0.cpp.obj	443e20946ba92691
+1011	3146	7756447025994436	CMakeFiles/appuntitled1.dir/appuntitled1_qmltyperegistrations.cpp.obj	f32ed2780db43eea
+1008	3315	7756447025974359	CMakeFiles/appuntitled1.dir/main.cpp.obj	3f8bb14f35976ec9
+1021	3461	7756447026095937	CMakeFiles/appuntitled1.dir/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.rcc/qmlcache/appuntitled1_main_qml.cpp.obj	14ed5b2f0a7a3ea6
+1018	3875	7756447026061081	CMakeFiles/appuntitled1.dir/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.rcc/qmlcache/appuntitled1_qmlcache_loader.cpp.obj	12db8125b8e585c0
+3876	4105	7756447054638038	appuntitled1.exe	6289d7675dca5ada
