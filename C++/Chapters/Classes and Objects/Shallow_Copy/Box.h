@@ -13,7 +13,11 @@ private:
 
 public:
     Box();
+    Box(Box &copy);
     ~Box();
+
+    //Box& operator =(const Box &copy);
+
 
     void setDimention(int length, int breadth, int height);
     void showData();

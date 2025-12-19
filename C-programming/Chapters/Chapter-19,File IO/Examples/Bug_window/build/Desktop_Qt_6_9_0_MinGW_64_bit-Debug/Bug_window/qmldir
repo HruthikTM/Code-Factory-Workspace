@@ -1,4 +1,0 @@
-module Bug_window
-typeinfo appBug_window.qmltypes
-prefer :/Bug_window/
-

@@ -10,7 +10,29 @@ Box::~Box()
     cout << "Box Destructor" << endl;
 }
 
-void Box :: setDimention(int length, int breadth, int height)
+Box::Box(Box &copy)
+{
+    cout << "Shallow-Copy Copy Constructor" << endl;
+    m_length = copy.m_length;
+    m_height = copy.m_height;
+    m_breadth = copy.m_breadth;
+}
+
+// Box &Box::operator=(const Box &copy)
+// {
+//     cout << "Shallow-Copy Assignment Operator" << endl;
+
+//     if (this != &copy)
+//     {
+//         m_length = copy.m_length;
+//         m_height = copy.m_height;
+//         m_breadth = copy.m_breadth;
+//     }
+
+//     return *this;
+// }
+
+void Box :: setDimention(int length, int height, int breadth)
 {
     m_length = length;
     m_breadth = new int;

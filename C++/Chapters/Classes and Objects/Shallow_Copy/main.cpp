@@ -10,18 +10,18 @@ int main()
     b1.showData();
     cout << endl;
 
-    //Copy made through assignment operator
-    b2 = b1;
-    b2.showData();
-    cout << endl;
+    // Copy made through assignment operator
+    // b2 = b1;
+    // b2.showData();
+    // cout << endl;
 
-    //Copy made through copy constructor
+    // Copy made through copy constructor
     Box b3 = b1;
     b3.showData();
     cout << endl;
 
-    b1.deleteBreadth();
-    b3.showData();
+    // b1.deleteBreadth();
+    // b3.showData();
 
     return 0;
 }

@@ -1,5 +1,0 @@
-1	Vijay Malya	Entrepreneur
-2	Upendra	        Director
-3	Hans Zimmer	Composer
-4	Trump	        President
-5	Elon Musk	Business Man

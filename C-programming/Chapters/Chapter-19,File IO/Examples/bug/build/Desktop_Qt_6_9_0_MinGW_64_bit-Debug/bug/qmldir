@@ -1,4 +1,0 @@
-module bug
-typeinfo appbug.qmltypes
-prefer :/bug/
-

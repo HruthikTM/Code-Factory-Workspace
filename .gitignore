@@ -1,0 +1,21 @@
+# Qt / Build artifacts
+build/
+*/build/
+*/build-*/
+Desktop_Qt_*
+*.pro.user
+
+# Object files
+*.o
+*.obj
+
+# IDE files
+.vscode/
+.idea/
+
+# PDFs / personal files
+*.pdf
+
+# OS files
+Thumbs.db
+.DS_Store
