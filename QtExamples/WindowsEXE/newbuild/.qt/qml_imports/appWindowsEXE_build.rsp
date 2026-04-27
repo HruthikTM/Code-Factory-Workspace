@@ -1,0 +1,14 @@
+-rootPath
+D:/Code Factory Workspace/QtExamples/WindowsEXE
+-cmake-output
+-output-file
+D:/Code Factory Workspace/QtExamples/WindowsEXE/newbuild/.qt/qml_imports/appWindowsEXE_build.cmake
+-importPath
+D:/Code Factory Workspace/QtExamples/WindowsEXE/newbuild
+-importPath
+D:/Code Factory Workspace/QtExamples/WindowsEXE/newbuild/WindowsEXE
+-importPath
+D:/QtBuild/install-msvc/qml
+-qrcFiles
+D:/Code Factory Workspace/QtExamples/WindowsEXE/newbuild/.qt/rcc/qmake_WindowsEXE.qrc
+D:/Code Factory Workspace/QtExamples/WindowsEXE/newbuild/.qt/rcc/appWindowsEXE_raw_qml_0.qrc

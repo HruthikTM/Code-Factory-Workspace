@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  ".qt/rcc/qrc_appWindowsEXE_raw_qml_0.cpp"
+  ".qt/rcc/qrc_qmake_WindowsEXE.cpp"
+  ".rcc/qmlcache/appWindowsEXE_Main_qml.cpp"
+  ".rcc/qmlcache/appWindowsEXE_Main_qml.cpp.aotstats"
+  ".rcc/qmlcache/appWindowsEXE_qmlcache_loader.cpp"
+  "CMakeFiles/appWindowsEXE.dir/appWindowsEXE_autogen/mocs_compilation.cpp.obj"
+  "CMakeFiles/appWindowsEXE.dir/appWindowsEXE_autogen/mocs_compilation.cpp.obj.d"
+  "CMakeFiles/appWindowsEXE.dir/appwindowsexe_qmltyperegistrations.cpp.obj"
+  "CMakeFiles/appWindowsEXE.dir/appwindowsexe_qmltyperegistrations.cpp.obj.d"
+  "CMakeFiles/appWindowsEXE.dir/main.cpp.obj"
+  "CMakeFiles/appWindowsEXE.dir/main.cpp.obj.d"
+  "CMakeFiles/appWindowsEXE.dir/newbuild/.qt/rcc/qrc_appWindowsEXE_raw_qml_0.cpp.obj"
+  "CMakeFiles/appWindowsEXE.dir/newbuild/.qt/rcc/qrc_appWindowsEXE_raw_qml_0.cpp.obj.d"
+  "CMakeFiles/appWindowsEXE.dir/newbuild/.qt/rcc/qrc_qmake_WindowsEXE.cpp.obj"
+  "CMakeFiles/appWindowsEXE.dir/newbuild/.qt/rcc/qrc_qmake_WindowsEXE.cpp.obj.d"
+  "CMakeFiles/appWindowsEXE.dir/newbuild/.rcc/qmlcache/appWindowsEXE_Main_qml.cpp.obj"
+  "CMakeFiles/appWindowsEXE.dir/newbuild/.rcc/qmlcache/appWindowsEXE_Main_qml.cpp.obj.d"
+  "CMakeFiles/appWindowsEXE.dir/newbuild/.rcc/qmlcache/appWindowsEXE_qmlcache_loader.cpp.obj"
+  "CMakeFiles/appWindowsEXE.dir/newbuild/.rcc/qmlcache/appWindowsEXE_qmlcache_loader.cpp.obj.d"
+  "CMakeFiles/appWindowsEXE_autogen.dir/AutogenUsed.txt"
+  "CMakeFiles/appWindowsEXE_autogen.dir/ParseCache.txt"
+  "appWindowsEXE_autogen"
+  "WindowsEXE/appWindowsEXE.qmltypes"
+  "appWindowsEXE.exe"
+  "appWindowsEXE.exe.manifest"
+  "appWindowsEXE.lib"
+  "appWindowsEXE.pdb"
+  "appWindowsEXE_autogen/mocs_compilation.cpp"
+  "appWindowsEXE_autogen/timestamp"
+  "appwindowsexe_qmltyperegistrations.cpp"
+  "meta_types/appWindowsEXE_json_file_list.txt"
+  "meta_types/appWindowsEXE_json_file_list.txt.timestamp"
+  "meta_types/qt6appwindowsexe_metatypes.json"
+  "meta_types/qt6appwindowsexe_metatypes.json.gen"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/appWindowsEXE.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

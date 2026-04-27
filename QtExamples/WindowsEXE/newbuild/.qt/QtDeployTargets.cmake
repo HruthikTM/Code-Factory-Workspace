@@ -1,0 +1,3 @@
+set(__QT_DEPLOY_TARGET_appWindowsEXE_FILE D:/Code Factory Workspace/QtExamples/WindowsEXE/newbuild/appWindowsEXE.exe)
+set(__QT_DEPLOY_TARGET_appWindowsEXE_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_appWindowsEXE_RUNTIME_DLLS D:/QtBuild/install-msvc/bin/Qt6Quick.dll;D:/QtBuild/install-msvc/bin/Qt6OpenGL.dll;D:/QtBuild/install-msvc/bin/Qt6Gui.dll;D:/QtBuild/install-msvc/bin/Qt6QmlMeta.dll;D:/QtBuild/install-msvc/bin/Qt6QmlModels.dll;D:/QtBuild/install-msvc/bin/Qt6QmlWorkerScript.dll;D:/QtBuild/install-msvc/bin/Qt6Qml.dll;D:/QtBuild/install-msvc/bin/Qt6Network.dll;D:/QtBuild/install-msvc/bin/Qt6Core.dll)

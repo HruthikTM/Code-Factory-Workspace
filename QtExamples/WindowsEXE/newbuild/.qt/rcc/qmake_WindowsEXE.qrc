@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/WindowsEXE">
+    <file alias="qmldir">D:/Code Factory Workspace/QtExamples/WindowsEXE/newbuild/WindowsEXE/qmldir</file>
+  </qresource>
+</RCC>
+

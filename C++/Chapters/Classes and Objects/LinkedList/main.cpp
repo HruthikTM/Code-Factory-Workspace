@@ -6,6 +6,7 @@ class Node
 {
 public:
     int data;
+
     Node *next;
 
     Node(int value)
@@ -187,34 +188,36 @@ public:
 
 int main()
 {
-    Linkedlist lst;
+    // Linkedlist lst;
 
-    lst.insertAtHead(10);
-    lst.insertAtHead(20);
-    lst.insertAtHead(30);
+    // lst.insertAtHead(10);
+    // lst.insertAtHead(20);
+    // lst.insertAtHead(30);
 
-    lst.display();
-    lst.insertAtHead(40);
-    lst.display();
+    // lst.display();
+    // lst.insertAtHead(40);
+    // lst.display();
 
-    lst.insertAtEnd(50);
-    lst.display();
+    // lst.insertAtEnd(50);
+    // lst.display();
 
-    lst.insertAtPosition(80,3);
+    // lst.insertAtPosition(80,3);
 
-    lst.display();
+    // lst.display();
 
-    lst.insertAtPosition(99,9);
-    lst.display();
+    // lst.insertAtPosition(99,9);
+    // lst.display();
 
-    lst.deleteHead();
-    lst.display();
+    // lst.deleteHead();
+    // lst.display();
 
-    lst.deleteLast();
-    lst.display();
+    // lst.deleteLast();
+    // lst.display();
 
-    lst.deleAtPosition(5);
-    lst.display();
+    // lst.deleAtPosition(5);
+    // lst.display();
 
+    double a= 10.00001;
+    cout << a << endl;
     return 0;
 }

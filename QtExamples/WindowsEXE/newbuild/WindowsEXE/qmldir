@@ -1,0 +1,6 @@
+module WindowsEXE
+typeinfo appWindowsEXE.qmltypes
+prefer :/qt/qml/WindowsEXE/
+Main 254.0 Main.qml
+depends QtQuick
+
